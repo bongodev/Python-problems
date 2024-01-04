@@ -127,3 +127,19 @@ def is_palindrome(input):
 
 # print(is_palindrome("python"))
 # function(n) -> function(n-1) + function(n-2)
+
+# fibonacci & printing where we are
+
+
+def fib(n):
+    print(f"calculating fib({n})")
+
+    if n <= 1:
+        return n
+
+    result = fib(n - 1) + fib(n - 2)
+    print(f"result of fib({n}): {result}")
+    return result
+
+
+print(fib(5))
